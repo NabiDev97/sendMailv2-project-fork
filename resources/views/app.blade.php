@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset("css/app.css")}}">
+    <link rel="stylesheet" href='{{asset("css/app.css")}}'>
     {{-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> --}}
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -18,8 +18,8 @@
   <title>Send-Mail</title>
 </head>
 <body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-primary  ">
-      <a class="navbar-brand" href="{{route('home')}}"><i class="fa-solid fa-envelope m-2"></i><strong>Team-Communication-App</strong></a>
+   <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+      <a class="navbar-brand text-white" href="{{route('home')}}"><i class="fa-solid fa-envelope m-2"></i><strong>Team-Communication-App</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,13 +28,13 @@
             
         <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle fs-5 fw-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle fs-5 fw-bold text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Envoi Email
                   </a>
                   <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{route('homegroupe')}} ">Envoi d'email groupé</a>
+                    <a class="dropdown-item text-white" href="{{route('homegroupe')}} ">Envoi d'email groupé</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{{route('home')}}">Envoi d'email individuel</a>
+                    <a class="dropdown-item text-white" href="{{route('home')}}">Envoi d'email individuel</a>
                     
                    
                   </div>
@@ -46,10 +46,10 @@
             
           </li> --}}
           <li class="nav-item">
-            <a class="nav-link fs-5 fw-bold text-dark" href="{{route('addContactview')}}">Ajouter un contact</a>
+            <a class="nav-link fs-5 fw-bold text-white" href="{{route('addContactview')}}">Ajouter un contact</a>
           </li>
           <li class="nav-item fs-5 fw-bold text-dark">
-            <a class="nav-link" href="{{route('listContactview')}}">Liste des contacts</a>
+            <a class="nav-link text-white" href="{{route('listContactview')}}">Liste des contacts</a>
           </li>
          
           
@@ -60,7 +60,7 @@
 
       @yield('content')
      
-      <div class="text-center pt-3 mt-3 bg-primary";">
+      <div class="text-center pt-3 mt-3 bg-primary";>
             © 2024 Copyright:
             <a class="text-dark" href="#">Defarsci.com</a>
           </div>

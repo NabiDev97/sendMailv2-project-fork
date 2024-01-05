@@ -98,7 +98,7 @@
                     <div class="btn-group ">
                       <button class="btn btn-danger btn-sm " wire:click="deleteContact({{$cont->id}})">Delete</button>
                       
-                      <button class="btn btn-success btn-sm ">Edit</button>
+                      <button class="btn btn-success btn-sm">Edit</button>
                     </div>
                   </td> --}}
                   
